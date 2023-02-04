@@ -8,3 +8,8 @@
 .heading{
 	@apply text-2xl text-slate-600 font-bold font-serif;
 }
+
+html{
+	box-sizing: border-box;
+	font-size: 100%;
+}
