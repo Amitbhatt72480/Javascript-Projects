@@ -1,34 +1,30 @@
 
 const target = document.getElementById("value");
-const incbtn = document.getElementById("increase");
-const decbtn = document.getElementById("decrease");
-const resbtn = document.getElementById("reset");
+let count = 0;
 
+const btns = document.querySelectorAll(".btn");
 
-incbtn.addEventListener("click", function(){
-	temp = parseInt(target.textContent);
-	target.textContent = temp + 1;
-	if (parseInt(target.textContent) > 0){
-		target.style.color = "green";
-	}
-	if (parseInt(target.textContent) == 0){
-		target.style.color = "black";
-	}
+btns.forEach(function (btn){
+	btn.addEventListener("click", function(e){
+		const styles = e.currentTarget.classList;
+		if (styles.contains("increase")){
+			count += 1;
+		}
+		else if(styles.contains("decrease")){
+			count -= 1;
+
+		}else{
+			count = 0;
+		}
+		if(count > 0){
+			target.style.color = "green";
+		}
+		else if(count < 0){
+			target.style.color = "red";
+		}
+		else{
+			target.style.color = "black";
+		}
+		target.textContent = count;
+	})
 })
-
-decbtn.addEventListener("click", function(){
-	temp = parseInt(target.textContent);
-	target.textContent = temp - 1;
-	if (parseInt(target.textContent) < 0){
-		target.style.color = "red";
-	}
-	if (parseInt(target.textContent) == 0){
-		target.style.color = "black";
-	}
-})
-
-resbtn.addEventListener("click", function(){
-	target.textContent = 0;
-	target.style.color = "black";
-})
-

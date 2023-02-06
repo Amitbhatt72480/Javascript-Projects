@@ -7,16 +7,16 @@
 	<link rel="stylesheet" href="../../dist/output.css">
 	<title>Document</title>
 </head>
-<body class="font-custom bg-gray-100">
+<body class="font-custom bg-gradient-to-r from-pink-200 via-blue-200 to-purple-300">
 	<div class="text-center mt-10">
 	<a href="/" class="text-2xl text-blue-600 hover:font-bold">Go Home</a></div>
 	<div class="text-center py-48">
 		<h1 class="text-7xl font-bold">Counter</h1>
 		<h1 class="text-8xl py-8" id="value">0</h1>
-		<div class="space-x-14 py-10">
-			<button class="border-2 border-black rounded-xl text-lg px-6 py-3" id="decrease">Decrease</button>
-			<button class="border-2 border-black rounded-xl text-lg px-6 py-3" id="reset">Reset</button>
-			<button class="border-2 border-black rounded-xl text-lg px-6 py-3" id="increase">Increase</button>
+		<div class="md:space-x-14 py-10 ">
+			<button class="btn decrease border-2 border-black rounded-xl text-lg px-6 py-3 hover:bg-black hover:text-white ease-out duration-500 " id="decrease">Decrease</button>
+			<button class="btn reset  border-2 border-black rounded-xl text-lg px-6 py-3 hover:bg-black hover:text-white ease-out duration-500 " id="reset">Reset</button>
+			<button class="btn increase border-2 border-black rounded-xl text-lg px-6 py-3 hover:bg-black hover:text-white ease-out duration-500 " id="increase">Increase</button>
 		</div>
 	</div>
 	<script src="counter.js"></script>

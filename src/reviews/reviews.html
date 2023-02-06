@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+	<link rel="stylesheet" href="../../dist/output.css">
+	<title>Document</title>
+</head>
+
+<body class="font-custom bg-gray-100">
+	<div class="ml-10 mt-5">
+		<a href="/" class="text-2xl text-purple-800 hover:text-pink-600">Go Home</a>
+	</div>
+	<div class="text-center py-10 mt-18">
+		<h1 class="text-6xl font-thin underline underline-offset-[20px] decoration-blue-500 decoration-3 ">Our Reviews
+		</h1>
+	</div>
+	<article class="border-2  md:w-[40%] mx-auto rounded-xl bg-black text-white shadow-xl pb-6">
+		<div class="relative">
+			<div class="flex flex-wrap justify-center py-10">
+				<div class="absolute w-48 h-48 rounded-full object-cover max-w-full align-middle border-none  bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 blur-md ">
+				</div>
+			</div>
+			<div class="relative flex flex-wrap justify-center bottom-10">
+				<div class="">
+					<img id="image" class="w-48 h-48 rounded-full object-cover max-w-full align-middle border-none"
+						src="person-1.jpeg" alt="img">
+				</div>
+			</div>
+		</div>
+		<h1 id="name" class="text-center text-xl font-semibold">Sara Jones</h1>
+		<p id="job" class="text-center text-blue-500 pt-2">UX Designer</p>
+		<p id="job-text" class="text-center text-sm py-3 mx-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis esse ipsa dolorum <span class="block">
+			sapiente? Nemo, dicta. Soluta est harum fuga doloremque.</span></p>
+
+		<div class="text-center space-x-3">
+			<button id="leftbtn" class="fa fa-arrow-left "></button>
+			<button id="rightbtn" class="fa fa-arrow-right"></button>
+		</div>
+		<div class="text-center py-3">
+		<button id="random" class="text-sm bg-blue-500 text-white font-bold border-2 decoration-blue-500 border-spacing-2 px-3 py-1 rounded-full">Suprise me!</button>
+	</div>
+	</article>
+	<script src="review.js"></script>
+</body>
+
+</html>
