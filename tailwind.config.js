@@ -8,7 +8,11 @@ module.exports = {
         'mycolor':'#f542e3'
       },
       fontFamily:{
-        'custom':'Bai Jamjuree'
+        'custom':'Bai Jamjuree',
+        'secondary':'Great Vibes'
+      },
+      letterSpacing:{
+        'custom':'0.2em'
       }
     },
   },

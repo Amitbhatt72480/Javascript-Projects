@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow:ital,wght@1,100&family=Dancing+Script&family=Great+Vibes&display=swap');
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -7,6 +7,9 @@
 
 .heading{
 	@apply text-2xl text-slate-600 font-bold font-serif;
+}
+.spacing{
+	letter-spacing:0.2em;
 }
 
 html{
