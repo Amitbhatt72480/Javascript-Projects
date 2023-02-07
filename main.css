@@ -13,3 +13,7 @@ html{
 	box-sizing: border-box;
 	font-size: 100%;
 }
+
+.decoration{
+	@apply shadow-md border-b;
+}

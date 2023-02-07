@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+	<link rel="stylesheet" href="../../dist/output.css">
+	<title>Navbar</title>
+</head>
+<body class="font-custom">
+	<div id="main" class="flex justify-around items-center py-5 decoration h-auto">
+		<div class="">
+			<img src="logo.svg" alt="logo">
+		</div>
+		<div class="md:hidden text-xl text-blue-400">
+			<i id="btn" href="" class="fa-solid fa-bars"></i>
+		</div>
+		<div class="hidden md:flex space-x-5 tracking-widest text-xl">
+			<h1 class="">Home</h1>
+			<h1 class="">About</h1>
+			<h1 class="">Contact</h1>
+			<h1 class="">Projects</h1>
+		</div>
+		<div class="hidden md:flex space-x-5 text-blue-500  text-xl">
+			<i class="fa-brands fa-facebook  hover:text-blue-700 cursor-pointer"></i>
+			<i class="fa-brands fa-twitter hover:text-blue-700 cursor-pointer"></i>
+			<i class="fa-brands fa-behance hover:text-blue-700 cursor-pointer"></i>
+			<i class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer"></i>
+			<i class="fa-brands fa-instagram hover:text-blue-700 cursor-pointer"></i>
+		</div>
+	</div>
+	<div id="next" class="hidden tracking-widest text-xl space-y-3 pb-3 pl-5 md:hidden decoration">
+		<h1 class="hover:bg-blue-500 cursor-pointer hover:text-white">Home</h1>
+		<h1 class="hover:bg-blue-500 cursor-pointer hover:text-white">About</h1>
+		<h1 class="hover:bg-blue-500 cursor-pointer hover:text-white">Contact</h1>
+		<h1 class="hover:bg-blue-500 cursor-pointer hover:text-white">Projects</h1>
+	</div>
+	<script src="https://kit.fontawesome.com/caa5361e6d.js" crossorigin="anonymous"></script>
+	<script src="navbar.js"></script>
+</body>
+</html>
