@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <!-- font-awesome -->
+  </head>
+  <body class="font-custom spacing">
+    <a href="/" class=" text-xl p-4 ">Go Home</a>
+    <div class="flex justify-center pb-6 mt-10">
+      <h1 class="text-4xl border-b-2 font-bold decoration-black">Our menu</h1>
+    </div>
+    <div class="flex justify-center space-x-2 md:space-x-10 pb-10" >
+      <button data-id="all"  class="filter-btn px-3 py-2 border-2 border-[#c5ad29] rounded-xl shadow-xl hover:bg-[#c5ad29] hover:text-white duration-300">All</button>
+      <button data-id="breakfast"  class="filter-btn px-3 py-2 border-2 border-[#c5ad29] rounded-xl shadow-xl hover:bg-[#c5ad29] hover:text-white duration-300">Breakfast</button>
+      <button data-id="lunch" class="filter-btn px-3 py-2 border-2 border-[#c5ad29] rounded-xl shadow-xl hover:bg-[#c5ad29] hover:text-white duration-300">Lunch</button>
+      <button data-id="shakes" class="filter-btn px-3 py-2 border-2 border-[#c5ad29] rounded-xl shadow-xl hover:bg-[#c5ad29] hover:text-white duration-300">Shakes</button>
+      <button data-id="dinner" class="filter-btn px-3 py-2 border-2 border-[#c5ad29] rounded-xl shadow-xl hover:bg-[#c5ad29] hover:text-white duration-300">Dinner</button>
+    </div>
+    <div id="section" class="md:grid md:grid-cols-2 gap-20 mx-2 md:mx-32">
+    <div  class="section grid grid-cols-2 space-x-3">
+      <div class="">
+        <img class="md:w-60 md:h-44 w-32 h-24 shadow-md border-4 border-[#c5ad29] rounded-xl" src="menu-item.jpeg" alt="img">
+      </div>
+      <div class="space-y-5">
+        <h1 class="border-b-2 text-xl font-bold" >Buttermilk Pancakes <span class="text-[#b19a12]">$15.99</span></h1>
+        <p class="text-xs md:text-sm">I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed</p>
+      </div>
+    </div>
+    
+  </div>
+    <script src="app.js"></script>
+  </body>
+</html>
